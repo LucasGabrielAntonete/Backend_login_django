@@ -6,11 +6,13 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 from usuario.cadastro import cadastro
+from usuario.login import login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/", include(usuario_router.urls)),
     path("token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
-    path("api/cadastro/", cadastro, name="cadastro")
+    path("api/cadastro/", cadastro, name="cadastro"),
+    path("api/login/", login, name="login")
 ]
