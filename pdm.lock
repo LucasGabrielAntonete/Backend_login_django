@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:4cf77dcd8115b54fa26e33b3975a5fa17e5ed7e9df70aa5fdd317108272c5705"
+content_hash = "sha256:6ac1920b5f40683bedd32fd481974948134c4c760bedde2504dafa02a807dd55"
 
 [[package]]
 name = "asgiref"
@@ -32,6 +32,21 @@ dependencies = [
 files = [
     {file = "Django-5.0.3-py3-none-any.whl", hash = "sha256:5c7d748ad113a81b2d44750ccc41edc14e933f56581683db548c9257e078cc83"},
     {file = "Django-5.0.3.tar.gz", hash = "sha256:5fb37580dcf4a262f9258c1f4373819aacca906431f505e4688e37f3a99195df"},
+]
+
+[[package]]
+name = "django-cors-headers"
+version = "4.3.1"
+requires_python = ">=3.8"
+summary = "django-cors-headers is a Django application for handling the server headers required for Cross-Origin Resource Sharing (CORS)."
+groups = ["default"]
+dependencies = [
+    "Django>=3.2",
+    "asgiref>=3.6",
+]
+files = [
+    {file = "django-cors-headers-4.3.1.tar.gz", hash = "sha256:0bf65ef45e606aff1994d35503e6b677c0b26cafff6506f8fd7187f3be840207"},
+    {file = "django_cors_headers-4.3.1-py3-none-any.whl", hash = "sha256:0b1fd19297e37417fc9f835d39e45c8c642938ddba1acce0c1753d3edef04f36"},
 ]
 
 [[package]]
