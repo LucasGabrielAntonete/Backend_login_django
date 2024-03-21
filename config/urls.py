@@ -5,9 +5,9 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
-from usuario.cadastro import cadastro
-from usuario.login import login
-from usuario.authgoogle import register_by_access_token, authentication_test
+from usuario.utils.cadastro import cadastro
+from usuario.utils.login import login
+from usuario.utils.authgoogle import register_by_access_token, authentication_test
 
 urlpatterns = [
     path('admin/', admin.site.urls),
