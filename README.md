@@ -1,3 +1,8 @@
 # Backend_login_django
 
-Criação de um backend de cadastro e login de Usuarios em DjangoRest
+Tutorial de como fazer um CRUD completo de usuario.
+
+Neste tutorial você vai aprender:
+- Como fazer um *Cadastro* e *Login* de Usuarios.
+- Como utilizar a API do Google para *Cadastro* e *Login*
+
