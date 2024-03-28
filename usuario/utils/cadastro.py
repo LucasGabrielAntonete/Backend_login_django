@@ -14,12 +14,12 @@ from ..models import Usuario
 def cadastro(request):
      email = request.data.get("email")
      password = request.data.get("password")
-     data_nascimento = request.data.get("data_nascimento")
+     full_name = request.data.get("full_name")
 
      if(Usuario.objects.filter(email=email).exists()):
          return Response({"error": _("Email já cadastrado")}, status=status.HTTP_400_BAD_REQUEST)
      else:
-            usuario = Usuario.objects.create(email=email, data_nascimento=data_nascimento)
+            usuario = Usuario.objects.create(email=email, full_name=full_name)
             usuario.set_password(password)
             usuario.save()
             return Response({"message": _("Usuário cadastrado com sucesso")}, status=status.HTTP_201_CREATED)
