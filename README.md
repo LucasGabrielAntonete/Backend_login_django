@@ -1,4 +1,4 @@
-# Backend_login_django
+# safe-login-backend
 
 Tutorial de como fazer um CRUD completo de usuario.
 
@@ -200,13 +200,13 @@ urlpatterns = [
 
 -   # 4. Criando Login
 
--   Para criarmos o login nós precisamos criar um arquivo chamado *login* dentro da pasta *Usuario*
+-   Para criarmos o login nós precisamos criar um arquivo chamado *login* dentro da pasta *usuario*
 
--   Para deixar tudo um pouco mais organizado vamos criar uma pasta chamada *Utils* e colocaremos o arquivo *login* dentro.
+-   Para deixar tudo um pouco mais organizado vamos criar uma pasta chamada *utils* e colocaremos o arquivo *login* dentro.
 
 -   O nosso código será o seguinte:
 
--   ```python
+   ```python
     from rest_framework.decorators import api_view, authentication_classes, permission_classes
     from rest_framework.permissions import AllowAny
     from rest_framework.response import Response
@@ -261,13 +261,13 @@ urlpatterns = [
 - Explicação:
 
 
-- 5: Cadastro
+- # 5: Cadastro
 
 - Para o cadastro nós vamos fazer a mesma coisa que já fizemos com o arquivo *login*:
 
 - Agora o nosso codigo é um pouco mais simples:
 
-- ```python
+ ```python
     from rest_framework.decorators import api_view, authentication_classes, permission_classes
     from rest_framework.permissions import AllowAny
     from rest_framework.response import Response
